@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AesCrypt : NSObject
+@interface AesCrypto : NSObject
 + (NSString *) encrypt: (NSString *)clearText  key: (NSString *)key iv: (NSString *)iv;
 + (NSString *) decrypt: (NSString *)cipherText key: (NSString *)key iv: (NSString *)iv;
 + (NSString *) pbkdf2:(NSString *)password salt: (NSString *)salt cost: (NSInteger)cost length: (NSInteger)length;

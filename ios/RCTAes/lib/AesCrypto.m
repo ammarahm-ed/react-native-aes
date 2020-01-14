@@ -9,9 +9,9 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonKeyDerivation.h>
 
-#import "AesCrypt.h"
+#import "AesCrypto.h"
 
-@implementation AesCrypt
+@implementation AesCrypto
 
 + (NSString *) toHex:(NSData *)nsdata {
     const unsigned char *bytes = (const unsigned char *)nsdata.bytes;
